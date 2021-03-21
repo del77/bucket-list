@@ -1,0 +1,90 @@
+:root {
+    --primary: rgb(86, 209, 211);
+  }
+
+img {
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+header {
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    color: white;
+}
+
+.banner > h2 {
+    color: rgb(217, 255, 1);
+    margin-top: 1em;
+}
+
+.banner {
+    padding: 3.5em 1em;
+    
+}
+
+nav {
+    color: white;
+    margin-top: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--primary);
+    opacity: 90%;
+}
+
+nav li {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    padding: 1em;
+}
+
+nav li:hover {
+    color:rgb(47, 68, 255)
+}
+
+
+main section {
+    margin: 0 1em;
+}
+
+.no-dreams {
+    text-align: center;
+    margin-top: 150px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary);
+    width: 100%;
+    color: white;
+}
+
+footer div {
+    margin: 0 0.5em;
+}
