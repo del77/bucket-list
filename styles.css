@@ -1,5 +1,6 @@
 :root {
     --primary: rgb(86, 209, 211);
+    --secondary: rgb(16, 82, 204);
     box-sizing: border-box;
 }
 
@@ -45,7 +46,7 @@ header {
 
 
 .banner > h2 {
-    color: rgb(16, 82, 204);
+    color: var(--secondary);
     /* margin-top: 1em; */
 }
 
@@ -114,9 +115,10 @@ footer p {
 
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 810px) {
     body {
         /* background-color: cyan; */
+        font-size: 1.15rem;
     }
 
     header section {
