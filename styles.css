@@ -37,17 +37,21 @@ header {
     background-image: url(img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-x: 100%; */
     background-position-y: 100%;
     color: white;
     display: flex;
     flex-direction: column;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
 
 .banner > h2 {
     color: var(--secondary);
-    /* margin-top: 1em; */
 }
 
 .banner {
@@ -57,7 +61,6 @@ header {
 nav {
     color: white;
     margin-top: auto;
-    /* margin-top: 3em; */
 }
 
 nav ul {
@@ -69,15 +72,16 @@ nav ul {
     opacity: 90%;
 }
 
-nav li {
+nav a {
     display: inline-block;
     flex: 1;
     text-align: center;
     padding: 1em;
-    padding: 1em;
+    text-decoration: none;
+    color:white;
 }
 
-nav li:hover {
+nav a:hover {
     color:rgb(47, 68, 255)
 }
 
@@ -92,7 +96,7 @@ main section {
 }
 
 footer {
-    position: absolute;
+    /* position: sticky; */
     bottom: 0;
     background-color: var(--primary);
     width: 100%;
@@ -112,19 +116,62 @@ footer p {
 
 }
 
+main {
+    width: 1400px;
+    max-width: 90%;
+    margin: 1.5em auto;
+}
+
+.dreams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+}
+
+.dream {
+    border: 2px solid var(--secondary);
+    position: relative;
+}
+
+.dream-title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 0.5em 0.45em;
+}
+
+.dream h3 {
+    
+    top: 10px;
+    left: 10px;
+    color: white;
+    display: inline;   
+}
+
+.dream-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-align: center;
+    background-color: var(--primary);
+    padding: 0.5em;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
 
 
 
 @media screen and (min-width: 810px) {
     body {
-        /* background-color: cyan; */
         font-size: 1.15rem;
-    }
-
-    header section {
-        width: 700px;
-        max-width: 100%;
-        margin: 0 auto;
     }
 
     h1 {
@@ -139,6 +186,7 @@ footer p {
         background-position-y: 70%;
         height: 60%;
     }
+    
 }
 
 @media screen and (min-width: 1200px) {

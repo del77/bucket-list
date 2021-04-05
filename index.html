@@ -10,42 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
       rel="stylesheet"
     />
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js" defer type="module"></script>
+    <script src="scripts/main.js" defer type="module"></script>
     <title>Bucket list</title>
   </head>
   <body>
-    <template id="header-template">
-      <header>
-        <div class="banner">
-          <h1>Make your dreams come true!</h1>
-          <h2>Discover and track<br />things you want to do.</h2>
-        </div>
-        <nav>
-          <ul>
-            <li>My dreams</li>
-            <li>Discover dreams</li>
-          </ul>
-        </nav>
-      </header>
-    </template>
-
+    <header>
+      <div class="banner">
+        <h1>Make your dreams come true!</h1>
+        <h2>Discover and track<br />things you want to do.</h2>
+      </div>
+      <nav>
+        <ul>
+          <a href="/index.html"><li>My dreams</li></a>
+          <a href="/catalogue.html"><li>Discover dreams</li></a>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section class="dreams-list">
-        <div class="no-dreams">
-          <p>Looks like you haven't added any objectives yet...</p>
-          <p>
-            <a href="">Check out our catalogue</a> and make your dreams come
-            true!
-          </p>
-        </div>
-      </section>
+      <div class="dreams"></div>
     </main>
-    <template id="footer-template">
-      <footer>
-        <div>
-          <p>All rights reserved.</p>
-        </div>
-      </footer>
-    </template>
+    <footer>
+      <div>
+        <p>All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
