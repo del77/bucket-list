@@ -96,7 +96,6 @@ main section {
 }
 
 footer {
-    /* position: sticky; */
     bottom: 0;
     background-color: var(--primary);
     width: 100%;
@@ -105,7 +104,6 @@ footer {
 }
 
 footer div {
-    /* margin:  0.5em; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
